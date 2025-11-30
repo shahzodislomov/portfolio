@@ -9,10 +9,10 @@ import { Link, useParams } from "react-router";
 const projectsData: Record<string, any> = {
   "1": {
     _id: "1",
-    title: "hamma",
+    title: "Portfolio",
     description: "A comprehensive TypeScript project showcasing modern development practices.",
     tags: ["TypeScript", "React", "Web"],
-    githubUrl: "https://github.com/shahzodislomov/hamma",
+    githubUrl: "https://github.com/shahzodislomov/portfolio",
     codeExplanation: `
 ### Project Structure
 The project follows a modular architecture, separating concerns into distinct layers.
@@ -20,7 +20,6 @@ The project follows a modular architecture, separating concerns into distinct la
 #### Key Components:
 1. **Core Logic**: Handles the business logic and state management.
 2. **UI Components**: Reusable React components styled with Tailwind CSS.
-3. **API Integration**: Typed API calls using Axios/Fetch.
     `
   },
   "2": {
@@ -28,7 +27,7 @@ The project follows a modular architecture, separating concerns into distinct la
     title: "bluepeak-logistics",
     description: "Logistics management system built with TypeScript.",
     tags: ["TypeScript", "Logistics"],
-    githubUrl: "https://github.com/shahzodislomov/bluepeak-logistics",
+    githubUrl: "https://github.com/shahzodislomov/blue-peak-project",
     codeExplanation: "Detailed explanation of the logistics algorithm..."
   },
   "3": {
@@ -73,7 +72,7 @@ The project follows a modular architecture, separating concerns into distinct la
 
 export default function ProjectDetail() {
   const { id } = useParams<{ id: string }>();
-  
+
   const displayProject = id ? projectsData[id] : null;
 
   if (!displayProject) {

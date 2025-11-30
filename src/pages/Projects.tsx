@@ -19,10 +19,10 @@ interface Project {
 const projects: Project[] = [
   {
     _id: "1",
-    title: "hamma",
+    title: "Portfolio",
     description: "A comprehensive TypeScript project showcasing modern development practices.",
     tags: ["TypeScript", "React", "Web"],
-    githubUrl: "https://github.com/shahzodislomov/hamma",
+    githubUrl: "ttps://github.com/shahzodislomov/portfolio",
     featured: true,
   },
   {

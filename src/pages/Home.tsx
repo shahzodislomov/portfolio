@@ -50,7 +50,7 @@ export default function Home() {
               <a href="https://github.com/shahzodislomov" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors transform hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]">
                 <Github className="h-7 w-7" />
               </a>
-              <a href="https://www.linkedin.com/in/shahzodislomov/" className="hover:text-white transition-colors transform hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]">
+              <a href="https://www.linkedin.com/in/shahzodislomov/" target="_blank" className="hover:text-white transition-colors transform hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]">
                 <Linkedin className="h-7 w-7" />
               </a>
               <a href="https://t.me/shawn_isl" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors transform hover:scale-110 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]">

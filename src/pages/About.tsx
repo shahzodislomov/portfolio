@@ -46,12 +46,19 @@ export default function About() {
           I build secure, robust, and user-friendly applications. My journey includes participating in CTFs like Patriot CTF and Mahadsec CTF, 
           and I am constantly expanding my knowledge in system administration and network security.
         </p>
-        
-        <a href="#" className="inline-block">
+        <div className="flex gap-4 justify-center">
+        <a href="/cv/Shahzod_Islomov_Resume.docx" className="inline-block" download>
           <Button size="lg" className="bg-white text-black hover:bg-white/90 font-bold rounded-full px-8 shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:scale-105 transition-transform">
-            <Download className="mr-2 h-5 w-5" /> Download CV
+            <Download className="mr-2 h-5 w-5" /> Download CV .docx
+          </Button>
+          </a>
+          <a href="/cv/Shahzod_Islomov_Resume.pdf" download>
+          <Button size="lg" className="bg-white text-black hover:bg-white/90 font-bold rounded-full px-8 shadow-[0_0_15px_rgba(255,255,255,0.3)] hover:scale-105 transition-transform">
+            <Download className="mr-2 h-5 w-5" /> Download CV .pdf
           </Button>
         </a>
+        </div>
+        
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
