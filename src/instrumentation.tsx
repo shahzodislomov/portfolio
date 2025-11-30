@@ -179,13 +179,18 @@ export function InstrumentationProvider({
       try {
         console.log(event);
         event.preventDefault();
-        setError({
-          error: event.message,
-          stack: event.error?.stack || "",
-          filename: event.filename || "",
-          lineno: event.lineno,
-          colno: event.colno,
-        });
+        // Only surface the error dialog if Vly monitoring is configured.
+        // This prevents the dialog from appearing in projects that don't have VLY configured
+        // while still allowing errors to be reported when configured.
+        if (import.meta.env.VITE_VLY_APP_ID) {
+          setError({
+            error: event.message,
+            stack: event.error?.stack || "",
+            filename: event.filename || "",
+            lineno: event.lineno,
+            colno: event.colno,
+          });
+        }
 
         if (import.meta.env.VITE_VLY_APP_ID) {
           await reportErrorToVly({
@@ -212,10 +217,12 @@ export function InstrumentationProvider({
           });
         }
 
-        setError({
-          error: event.reason.message,
-          stack: event.reason.stack,
-        });
+        if (import.meta.env.VITE_VLY_APP_ID) {
+          setError({
+            error: event.reason.message,
+            stack: event.reason.stack,
+          });
+        }
       } catch (error) {
         console.error("Error in handleRejection:", error);
       }
@@ -232,7 +239,10 @@ export function InstrumentationProvider({
   return (
     <>
       <ErrorBoundary>{children}</ErrorBoundary>
-      {error && <ErrorDialog error={error} setError={setError} />}
+      {/* Only show the error dialog when Vly is configured; otherwise errors are logged but not surfaced to the user. */}
+      {error && import.meta.env.VITE_VLY_APP_ID && (
+        <ErrorDialog error={error} setError={setError} />
+      )}
     </>
   );
 }

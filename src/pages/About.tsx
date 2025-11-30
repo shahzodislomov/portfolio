@@ -39,7 +39,7 @@ export default function About() {
         <div className="mb-8">
           <Logo size="xl" />
         </div>
-        <h1 className="text-4xl font-bold mb-6 text-white drop-shadow-md font-berserk tracking-wider">About Me</h1>
+  <h1 className="text-4xl font-bold mb-6 text-white drop-shadow-md font-sans tracking-wider">About Me</h1>
         <p className="text-lg text-white/80 leading-relaxed mb-8">
           I am a passionate developer and aspiring Penetration Tester with a unique blend of skills in frontend development and cybersecurity. 
           With <span className="font-semibold text-white">2 years of experience in Frontend Development</span> and <span className="font-semibold text-white">1 year in Ethical Hacking</span>, 
@@ -75,7 +75,7 @@ export default function About() {
                   <div className="p-3 rounded-lg bg-white/20 text-white">
                     <skill.icon className="h-6 w-6" />
                   </div>
-                  <h3 className="text-xl font-semibold text-white font-berserk tracking-wide">{skill.name}</h3>
+                  <h3 className="text-xl font-semibold text-white font-sans tracking-wide">{skill.name}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {skill.items.map((item) => (

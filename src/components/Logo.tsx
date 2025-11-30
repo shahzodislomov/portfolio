@@ -12,7 +12,7 @@ export function Logo({ className, size = "md", showIcon = false }: LogoProps) {
     sm: "text-2xl",
     md: "text-4xl",
     lg: "text-6xl",
-    xl: "text-9xl",
+    xl: "text-8xl",
   };
 
   const iconSizes = {
@@ -37,7 +37,7 @@ export function Logo({ className, size = "md", showIcon = false }: LogoProps) {
 
       {/* Main Letter */}
       <span className={cn(
-        "font-berserk font-black tracking-tighter relative z-10 transition-all duration-300 group-hover:scale-110 group-hover:text-primary drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]",
+        "font-sans font-black tracking-tighter relative z-10 transition-all duration-300 group-hover:scale-110 group-hover:text-primary drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]",
         sizeClasses[size]
       )}>
         W

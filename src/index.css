@@ -41,7 +41,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   
-  --font-berserk: "UnifrakturMaguntia", cursive;
+
 }
 
 /* CHANGE VALUES FOR THEME */
@@ -140,6 +140,10 @@
   }
   body {
     @apply bg-background text-foreground;
+    /* Use Lora as the primary serif font for an elegant look; fall back to system fonts if unavailable */
+    font-family: "Lora", Georgia, "Times New Roman", serif;
+    /* Prefer standard weight for body text; headings with font-bold will be bolder */
+    font-weight: 400;
   }
   button:not([disabled]),
   [role="button"]:not([disabled]) {

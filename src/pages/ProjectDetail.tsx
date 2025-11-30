@@ -89,9 +89,10 @@ export default function ProjectDetail() {
   }
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-      <Link to="/projects" className="inline-flex items-center text-white/70 hover:text-white mb-8 transition-colors">
-        <ArrowLeft className="mr-2 h-4 w-4" /> Back to Projects
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-6 sm:pt-12 min-h-screen">
+      <Link to="/projects" className="inline-flex items-center text-white/70 hover:text-white mb-8 transition-colors hover:gap-3 duration-300 group">
+        <ArrowLeft className="mr-2 h-5 w-5 group-hover:-translate-x-1 transition-transform" /> 
+        <span className="font-semibold">Back to Projects</span>
       </Link>
 
       <motion.div

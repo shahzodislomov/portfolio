@@ -24,7 +24,7 @@ export default function Home() {
               </span>
             </div>
 
-            <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight text-white drop-shadow-2xl font-berserk mb-6 leading-none">
+            <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight text-white drop-shadow-2xl font-sans mb-6 leading-none">
               Shahzod <br /> Islomov
             </h1>
 
