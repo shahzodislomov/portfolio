@@ -36,7 +36,7 @@ export function Navbar() {
 
   return (
     <nav className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4">
-      <div className="bg-black/20 backdrop-blur-xl border border-white/10 rounded-full px-6 py-3 shadow-lg w-full max-w-5xl flex items-center justify-between">
+      <div className="bg-black/20 backdrop-blur-xl border border-white/10 rounded-full px-4 py-2 md:px-6 md:py-3 shadow-lg w-full max-w-5xl flex items-center justify-between">
         <div className="flex-shrink-0 mr-8">
           <Link to="/">
             <Logo size="sm" className="hover:scale-110 transition-transform" />

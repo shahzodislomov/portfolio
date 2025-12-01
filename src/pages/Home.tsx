@@ -6,7 +6,7 @@ import { Logo } from "@/components/Logo";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-[85vh] px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <div className="flex flex-col items-center justify-center min-h-[85vh] px-4 sm:px-6 lg:px-8 relative overflow-hidden pb-20 md:pb-0">
       <div className="max-w-7xl mx-auto w-full z-10">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-24">
           
