@@ -37,7 +37,7 @@ export function Logo({ className, size = "md", showIcon = false }: LogoProps) {
 
       {/* Main Letter */}
       <span className={cn(
-        "font-sans font-black tracking-tighter relative z-10 transition-all duration-300 group-hover:scale-110 group-hover:text-primary drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]",
+        "font-serif font-light tracking-tighter relative z-10 transition-all duration-300 group-hover:scale-110 group-hover:text-primary drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]",
         sizeClasses[size]
       )}>
         W
